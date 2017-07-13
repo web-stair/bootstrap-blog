@@ -1,4 +1,4 @@
-# bootstrap-blog
+# Arabic Bootstrap Blog
 A very simple bootstrap blog home page with custom jquery slider
 
 ### Live preview
