@@ -1,6 +1,9 @@
 # bootstrap-blog
 A very simple bootstrap blog home page with custom jquery slider
 
+### Live preview
+<a href="http://demo.eadhassan.com/template">demo</a>
+
 You can use this template to start your blog template.
 
 You will find two sliders in this template
