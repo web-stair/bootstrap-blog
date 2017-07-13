@@ -1,0 +1,1289 @@
+<!DOCTYPE html><html><head><title>Preview</title>
+<style type="text/css"><!--
+/*------------------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2. Typography
+3. Forms
+4. Wrapper
+5. Columns
+6. Wide slider
+7. Content slider
+8. Panel title
+9. Page title
+10. Shop
+11 Shop single
+12. Pagination
+13. Page 404
+14. Blog
+    14.1 Post layout 1
+    14.2 Post layout 2
+    14.3 Single layout
+    14.4 Multipack
+    14.5 List posts
+    14.6 List posts 1
+    14.7 List posts
+15. Top reviews
+16. Shortcodes
+    16.1 Google map
+    16.2 Popup
+    16.3 Slider
+    16.4 Head title
+    16.5 Dropcaps
+    16.6 Accordions
+    16.7 Tabs
+    16.8 Alerts
+    16.9 Buttons
+17. Header
+18. Navigation
+19. Main content
+20. General style
+21. Widgets
+    22.1 Widget authors
+    22.2 Widgets (Wordpress)
+    22.3 Widget categories (custom)
+    22.4 Widget posts big
+    22.5 Widget timeline
+    22.6 Widget tags
+    22.7 Widget socialize
+    22.8 Widget recent list
+    22.9 Widget banner 125
+23. Footer
+24. Copyright
+------------------------------------------------------------------------------*/
+
+
+
+/*------------------------------------------------------------------------------
+    1. Body
+------------------------------------------------------------------------------*/
+html {
+    font-family: sans-serif
+}
+body {
+    font-family: 'Open Sans', 'DroidKufi-Regular', sans-serif;
+    background: #E9EAED;
+    font-size: 14px;
+    line-height: 22px;
+    color: #666
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+  outline: none !important;
+}
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table
+}
+.container:after,
+.row:after,
+.clearfix:after {
+    clear: both
+}
+img {
+    outline: 0;
+    border: 0;
+    height: auto;
+    vertical-align: middle
+}
+iframe {
+    width: 100%
+}
+
+/*------------------------------------------------------------------------------
+    2. Typography
+------------------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    line-height: 1.1;
+}
+h1 {
+    font-size: 36px
+}
+h2 {
+    font-size: 30px
+}
+h3 {
+    font-size: 24px
+}
+h4 {
+    font-size: 18px
+}
+h5 {
+    font-size: 14px
+}
+h6 {
+    font-size: 12px
+}
+p {
+    margin: 0 0 20px 0
+}
+hr {
+  border: 0;
+  border-top: 4px double #8c8c8c;
+  text-align: center;
+  margin-top: 30px !important;
+  padding-bottom: 20px !important;
+}
+hr:after {
+  content: '\2665';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: #E9EAED;
+  color: #8c8c8c;
+  font-size: 18px;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s
+}
+a:active,
+a:hover {
+    outline: 0
+}
+strong,
+b {
+    color: #222
+}
+pre {
+    overflow: auto;
+    display: block;
+    padding: 10px;
+    margin: 0 0 10px;
+    line-height: 21px;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 1px solid #eee
+}
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 14px
+}
+mark {
+    color: #fff;
+    padding: 1px 4px
+}
+ul {
+    list-style: disc
+}
+ol {
+    list-style: decimal
+}
+dl {
+    margin-bottom: 10px
+}
+dl dt {
+    font-weight: 700
+}
+dl dd {
+    margin-left: 10px
+}
+ul,
+ol {
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 0;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+blockquote {
+    margin: 20px
+}
+blockquote p {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 24px;
+    color: #9ca2a4;
+    line-height: 32px;
+    position: relative
+}
+blockquote p span:first-child {
+    font-size: 30px;
+    font-weight: 400;
+    width: 15px;
+    position: absolute;
+    left: -20px
+}
+blockquote p span:last-child {
+    font-size: 30px;
+    font-weight: 400;
+    width: 15px;
+    position: absolute;
+    right: -15px
+}
+blockquote footer {
+    text-align: right;
+    font-style: italic
+}
+figure {
+    margin: 0 0 10px 0
+}
+.text_left {
+    text-align: left
+}
+.text_right {
+    text-align: right
+}
+.text_center {
+    text-align: center
+}
+.text_justify {
+    text-align: justify
+}
+
+
+/* default variables */
+:root {
+  --main-bg-color: #00C0EF;
+  --second-bg-color: #E74C3C;
+}
+body {
+  font-family: 'Open Sans', 'DroidKufi-Regular', sans-serif;
+  background: #E9EAED;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Open Sans', 'DroidKufi-Regular', sans-serif;
+}
+
+
+
+/* navbar */
+.navbar {
+  border: none;
+  margin-bottom: 0;
+  -webkit-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+}
+
+.dropdown-menu {
+  padding: 0;
+  border: none;
+  background: #1A242F;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+}
+
+.navbar-brand {
+  padding: 15px 15px
+}
+
+/* Newsticker */
+.newsticker {
+  width: 100%;
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+.newsticker span.news {
+  padding: 10px 15px;
+  background: var(--second-bg-color);
+  margin: 0;
+}
+
+.newsticker ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.newsticker ul li {
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+  font-family: 'Open Sans', 'DroidKufi-Regular', sans-serif;
+  font-size: small;
+}
+
+.newsticker ul li span {
+  background: var(--main-bg-color);
+  padding: 3px 7px;
+  font-size: x-small;
+  margin-right: 10px;
+}
+
+/* Cards */
+.latest {
+  padding: 25px 0;
+}
+
+.latest .heading h2 {
+  position: relative;
+  text-align: center;
+  font-family: 'Open Sans', 'DroidKufi-Regular', sans-serif;
+  margin-bottom: 30px;
+}
+
+.latest .heading h2 span {
+  background: var(--main-bg-color);
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.latest .heading h2:before {
+  background: var(--main-bg-color);
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+    top: 50%;
+  width: 100%;
+}
+
+.latest .heading h2:before {
+  left: 0;
+}
+.card {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.card img {
+  position: absolute;
+  height: 100%;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 100%;
+  right: 50%;
+  -webkit-transform: translate(50%);
+     -moz-transform: translate(50%);
+       -o-transform: translate(50%);
+          transform: translate(50%);
+  -webkit-transition: all ease-in-out 0.8s;
+     -moz-transition: all ease-in-out 0.8s;
+       -o-transition: all ease-in-out 0.8s;
+          transition: all ease-in-out 0.8s;
+}
+.card:hover img {
+  z-index: 5;
+  -webkit-transform: translate(50%) scale(1.3) rotate(9deg);
+     -moz-transform: translate(50%) scale(1.3) rotate(9deg);
+       -o-transform: translate(50%) scale(1.3) rotate(9deg);
+          transform: translate(50%) scale(1.3) rotate(9deg);
+}
+
+.card .overlay {
+  background: var(--main-bg-color);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all ease-in-out 0.8s;
+     -moz-transition: all ease-in-out 0.8s;
+       -o-transition: all ease-in-out 0.8s;
+          transition: all ease-in-out 0.8s;
+}
+.card:hover .overlay {
+  opacity: 0.5;
+  z-index: 10;
+}
+.card .card-details {
+  position: absolute;
+  bottom: -80px;
+  width: 100%;
+  background: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+  background: -o-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+.card:hover .card-details {
+  bottom: 0px;
+  padding: 0 10px 10px;
+  z-index: 20;
+}
+
+.card .card-details h4 {
+  font-family: 'Open Sans', 'DroidKufi-Regular', sans-serif !important;
+  color: #FFF;
+}
+
+.card .card-details p {
+  font-weight: 300;
+  color: #FFF;
+}
+
+/* owl carousel */
+.owl-carousel {
+  overflow: hidden;
+}
+
+.slider-carousel.owl-carousel
+{
+  box-shadow: 0 10px 6px -6px #575757;
+}
+.slider-carousel.owl-carousel:before, .slider-carousel.owl-carousel:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 20px 20px #9C9C9C;
+  transform: rotate(-6deg);
+}
+.slider-carousel.owl-carousel:after
+{
+  transform: rotate(6deg);
+  right: 10px;
+  left: auto;
+}
+.owl-prev, .owl-next {
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  background: var(--main-bg-color);
+  padding: 10px 13px;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all ease-in-out 0.2s;
+     -moz-transition: all ease-in-out 0.2s;
+       -o-transition: all ease-in-out 0.2s;
+          transition: all ease-in-out 0.2s;
+}
+.owl-prev { right: -50px;}
+.owl-next { left: -50px;}
+
+.owl-carousel:hover .owl-prev { right: 0;}
+.owl-carousel:hover .owl-next { left: 0;}
+
+.owl-dots {
+  display: table;
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* home page */
+.content {
+  padding-top: 15px;
+}
+
+.panel {
+  border: none;
+  box-shadow: rgba(1,2,2,0.08) 0px 1px 1.96px 0.04px
+}
+
+.panel-heading {
+  overflow: hidden;
+}
+
+.panel .panel-heading h3 {
+  padding-right: 20px;
+  margin: 10px 0;
+}
+
+.panel-heading .btn {
+  padding: 7px 15px;
+  margin: 10px 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: var(--main-bg-color);
+  color: #333;
+  border: none
+}
+
+.category {
+  overflow: hidden;
+}
+
+.category .head {
+  overflow: hidden;
+  background: #2C3E50;
+  margin-bottom: 10px;
+}
+
+.category .head h3 {
+  font-size: 12px;
+  background-color: var(--second-bg-color) !important;
+  display: inline-block;
+  padding: 7px 16px;
+  margin: 0;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  color: #FFF;
+  -webkit-transition: all ease-in-out 0.2s;
+     -moz-transition: all ease-in-out 0.2s;
+       -o-transition: all ease-in-out 0.2s;
+          transition: all ease-in-out 0.2s;
+}
+
+.category .head:hover h3 {
+  padding-left: 30px;
+}
+
+
+.category .head a {
+  font-family: droid arabic kufi;
+  float: left;
+  margin-left: 10px;
+  margin-top: 7px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 10px;
+  background-color: var(--main-bg-color);
+  font-size: 12px;
+  color: #fff !important;
+  transition: background-color .3s ease-out;
+  text-decoration: none
+}
+
+.category .head a:hover {
+  background: #00AFDB;
+}
+
+.category .col-md-4 {
+  padding: 4px;
+}
+
+.thumbnail {
+  border: none;
+  background: #FFF;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  box-shadow: 0px 2px 4px #C9C9C9;
+  padding: 0;
+  overflow: hidden !important;
+  position: relative;
+  margin: 0
+}
+.thumbnail .image {
+    height: 250px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.thumbnail .image img {
+  position:  relative;
+  height: 100%;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 100%;
+  right: 50%;
+  -webkit-transform: translate(50%);
+     -moz-transform: translate(50%);
+       -o-transform: translate(50%);
+          transform: translate(50%);
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+.thumbnail:hover .image img {
+  z-index: 5;
+  -webkit-transform: translate(50%) scale(1.1);
+     -moz-transform: translate(50%) scale(1.1);
+       -o-transform: translate(50%) scale(1.1);
+          transform: translate(50%) scale(1.1);
+}
+
+.thumbnail .image .overlay {
+  background: var(--main-bg-color);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+.thumbnail:hover .image .overlay {
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.thumbnail .caption {
+  position: absolute;
+  bottom: -100px;
+  z-index: 50;
+  padding: 15px;
+  width: 100%;
+  background: -moz-linear-gradient( 90deg, rgb(0, 67, 82) 0%, rgba(0,0,0,0) 100%);
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+
+.thumbnail:hover .caption {
+  bottom: 0px;
+}
+
+
+.thumbnail .caption h4 {
+  margin: 10px 0;
+  vertical-align: middle;
+  padding: 0px;
+  color: #FFF
+}
+.thumbnail .caption p {
+  color: #FFF;
+  font-size: 13px;
+}
+
+/* thumbnail full width */
+.thumbnail-full {
+  border: none;
+  background: #FFF;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  padding: 0;
+  overflow: hidden !important;
+  position: relative;
+  margin: 15px 0 0;
+}
+.thumbnail-full .image {
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+}
+
+.thumbnail-full .image img {
+  position:  relative;
+  height: 100%;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 100%;
+  right: 50%;
+  -webkit-transform: translate(50%);
+     -moz-transform: translate(50%);
+       -o-transform: translate(50%);
+          transform: translate(50%);
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+.thumbnail-full .image:hover img {
+  z-index: 5;
+  -webkit-transform: translate(50%) scale(1.1);
+     -moz-transform: translate(50%) scale(1.1);
+       -o-transform: translate(50%) scale(1.1);
+          transform: translate(50%) scale(1.1);
+}
+
+.thumbnail-full .image .overlay {
+  background: var(--main-bg-color);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+.thumbnail-full .image:hover .overlay {
+  opacity: 0.7;
+  z-index: 10;
+}
+
+.thumbnail-full .caption {
+  padding: 10px 0;
+}
+
+.thumbnail-full .caption h4 {
+  margin: 0 0 15px;
+  font-weight: 600;
+  padding: 0px;
+  color: #2C3E50
+}
+
+.thumbnail-full .caption p.post-content {
+  color: #4C6B8A;
+  line-height: 25px;
+  text-align: justify;
+}
+
+.thumbnail-full .caption p.data {
+  color: #4C6B8A;
+  margin-top: 15px;
+}
+
+.thumbnail-full .caption p.data span {
+  margin-left: 20px;
+}
+
+.thumbnail-full .caption p.data span:last-child {
+  margin-left: 0px;
+}
+
+/* thumbnail full width */
+.thumbnail-2-col {
+  border: none;
+  background: #FFF;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  padding: 0;
+  overflow: hidden !important;
+  position: relative;
+  margin: 5px 0 0 0;
+}
+
+.thumbnail-2-col .image {
+  height: 75px;
+  width: 75px;
+  float: right;
+  margin-left: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.thumbnail-2-col .image img {
+  position:  relative;
+  width: 100%;
+  height: auto !important;
+  max-height: none !important;
+  min-height: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+.thumbnail-2-col:hover .image img {
+  z-index: 5;
+  -webkit-transform: translateY(-50%) scale(1.1);
+     -moz-transform: translateY(-50%) scale(1.1);
+       -o-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1);
+}
+
+.thumbnail-2-col .caption {
+  float: right;
+  position: relative;
+  padding: 5px;
+}
+
+.thumbnail-2-col .caption h4 {
+  margin: 0 0 15px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0px;
+  color: #2C3E50;
+  max-height: 40px;
+  text-overflow: ellipsis-word;
+}
+
+.thumbnail-2-col .caption p.data {
+  color: #4C6B8A;
+  font-size: 13px;
+}
+
+.thumbnail-2-col .caption p.data span {
+  margin-left: 20px;
+}
+
+.thumbnail-2-col .caption p.data span:last-child {
+  margin-left: 0px;
+}
+
+
+/* thumbnail carousel */
+.category-carousel {
+  margin: 0px;
+}
+
+.thumb-carousel .thumb-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.thumb-carousel .thumb-image img {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.thumb-carousel .thumb-details {
+  width: 100%;
+  background: #FFF;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.thumb-carousel .thumb-details h4 {
+  margin-top: 0;
+  color: #2C3E50;
+}
+
+.thumb-carousel .thumb-details p {
+  color: #4C6B8A;
+  font-size: 13px;
+}
+
+/* sidebar widgets */
+.widget {
+  margin-bottom: 10px;
+}
+.widget-title {
+  background: #2C3E50;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  padding: 0;
+}
+.widget-title h4 {
+  font-size: 12px;
+  background-color: var(--second-bg-color) !important;
+  display: inline-block;
+  padding: 7px 16px;
+  margin: 0;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  color: #FFF;
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+.widget-body {
+  background: #FFF;
+  padding: 7px;
+}
+.widget-recent-posts .post-item {
+  margin-top: 10px;
+  overflow: hidden;
+  display: block;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+}
+.widget-recent-posts .post-item:last-child {
+  border-bottom: 0px;
+}
+.widget-recent-posts .post-item:first-child {
+  margin-top: 0px;
+}
+.widget-recent-posts .post-item .post-thumb {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  float: right;
+  display: inline-block;
+  position: relative;
+}
+.widget-recent-posts .post-item .post-thumb img {
+  position: relative;
+  z-index: 5 !important;
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+.widget-recent-posts .post-item:hover .post-thumb img {
+  z-index: 5;
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.widget-recent-posts .post-item .post-thumb .overlay {
+  background: var(--main-bg-color);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+.widget-recent-posts .post-item:hover .post-thumb .overlay {
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.widget-recent-posts .post-item .post-content {
+  padding-right: 10px;
+  display: inline-block;
+  float: right;
+  width: calc(100% - 85px);
+}
+.widget-recent-posts .post-item .post-content h4 a,
+.widget-recent-posts .post-item .post-content h4 {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #2C3E50;
+  text-decoration: none;
+  -webkit-transition: all ease-in-out 0.3s;
+     -moz-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+          transition: all ease-in-out 0.3s;
+}
+.widget-recent-posts .post-item:hover .post-content h4 a {
+  color: var(--main-bg-color);
+}
+
+.widget-recent-posts .post-item .post-content p {
+  font-size: 13px;
+}
+.widget-recent-posts .post-item .post-content p span {
+  margin-left: 15px;
+}
+.widget-recent-posts .post-item .post-content p span:last-child {
+  margin-left: 0;
+}
+
+
+--></style>
+</head>
+<body>
+<a name="0"></a><html>Element html</html><br>
+<a name="1"></a><body>Element body</body><br>
+<a name="2"></a><div>Class </div>
+<br>
+<a name="3"></a><div>Class </div>
+<br>
+<a name="4"></a><div>Class </div>
+<br>
+<a name="5"></a><div class="container">Class container</div>
+<br>
+<a name="6"></a><div class="container">Class container</div>
+<br>
+<a name="7"></a><div class="row">Class row</div>
+<br>
+<a name="8"></a><div class="row">Class row</div>
+<br>
+<a name="9"></a><div class="clearfix">Class clearfix</div>
+<br>
+<a name="10"></a><div class="clearfix">Class clearfix</div>
+<br>
+<a name="11"></a><div class="container">Class container</div>
+<br>
+<a name="12"></a><div class="row">Class row</div>
+<br>
+<a name="13"></a><div class="clearfix">Class clearfix</div>
+<br>
+<a name="14"></a><img src="file://C:\Program Files\Rapid PHP 2014\data\resources\preview.png"> Image<br>
+<a name="15"></a><iframe>Element iframe</iframe><br>
+<a name="16"></a><h1>Element h1</h1><br>
+<a name="17"></a><h2>Element h2</h2><br>
+<a name="18"></a><h3>Element h3</h3><br>
+<a name="19"></a><h4>Element h4</h4><br>
+<a name="20"></a><h5>Element h5</h5><br>
+<a name="21"></a><h6>Element h6</h6><br>
+<a name="22"></a><h1>Element h1</h1><br>
+<a name="23"></a><h2>Element h2</h2><br>
+<a name="24"></a><h3>Element h3</h3><br>
+<a name="25"></a><h4>Element h4</h4><br>
+<a name="26"></a><h5>Element h5</h5><br>
+<a name="27"></a><h6>Element h6</h6><br>
+<a name="28"></a><p>Element p</p><br>
+<a name="29"></a><hr><br>
+<a name="30"></a><hr><br>
+<a name="31"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="32"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="33"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="34"></a><strong>Element strong</strong><br>
+<a name="35"></a><b>Element b</b><br>
+<a name="36"></a><pre>Element pre</pre><br>
+<a name="37"></a><code>Element code</code><br>
+<a name="38"></a><kbd>Element kbd</kbd><br>
+<a name="39"></a><pre>Element pre</pre><br>
+<a name="40"></a><samp>Element samp</samp><br>
+<a name="41"></a><mark>Element mark</mark><br>
+<a name="42"></a><ul><li>Unordered List</li></ul><br>
+<a name="43"></a><ol><li>Ordered List</li></ol><br>
+<a name="44"></a><dl>Element dl</dl><br>
+<a name="45"></a><dl dt>Element dl dt</dl dt><br>
+<a name="46"></a><dl dd>Element dl dd</dl dd><br>
+<a name="47"></a><ul><li>Unordered List</li></ul><br>
+<a name="48"></a><ol><li>Ordered List</li></ol><br>
+<a name="49"></a><blockquote>Element blockquote</blockquote><br>
+<a name="50"></a><blockquote p>Element blockquote p</blockquote p><br>
+<a name="51"></a><blockquote p span>Element blockquote p span</blockquote p span><br>
+<a name="52"></a><blockquote p span>Element blockquote p span</blockquote p span><br>
+<a name="53"></a><blockquote footer>Element blockquote footer</blockquote footer><br>
+<a name="54"></a><figure>Element figure</figure><br>
+<a name="55"></a><div class="text_left">Class text_left</div>
+<br>
+<a name="56"></a><div class="text_right">Class text_right</div>
+<br>
+<a name="57"></a><div class="text_center">Class text_center</div>
+<br>
+<a name="58"></a><div class="text_justify">Class text_justify</div>
+<br>
+<a name="59"></a><div>Class </div>
+<br>
+<a name="60"></a><body>Element body</body><br>
+<a name="61"></a><h1>Element h1</h1><br>
+<a name="62"></a><h2>Element h2</h2><br>
+<a name="63"></a><h3>Element h3</h3><br>
+<a name="64"></a><h4>Element h4</h4><br>
+<a name="65"></a><h5>Element h5</h5><br>
+<a name="66"></a><h6>Element h6</h6><br>
+<a name="67"></a><p>Element p</p><br>
+<a name="68"></a><div class="navbar">Class navbar</div>
+<br>
+<a name="69"></a><div class="navbar-collapse">Class navbar-collapse</div>
+<br>
+<a name="70"></a><div class="dropdown-menu">Class dropdown-menu</div>
+<br>
+<a name="71"></a><div class="navbar-default .navbar-nav > li > a">Class navbar-default .navbar-nav > li > a</div>
+<br>
+<a name="72"></a><div class="navbar-brand">Class navbar-brand</div>
+<br>
+<a name="73"></a><div class="newsticker">Class newsticker</div>
+<br>
+<a name="74"></a><div class="newsticker span.news">Class newsticker span.news</div>
+<br>
+<a name="75"></a><div class="newsticker ul">Class newsticker ul</div>
+<br>
+<a name="76"></a><div class="newsticker ul li">Class newsticker ul li</div>
+<br>
+<a name="77"></a><div class="newsticker ul li span">Class newsticker ul li span</div>
+<br>
+<a name="78"></a><div class="latest">Class latest</div>
+<br>
+<a name="79"></a><div class="latest .heading h2">Class latest .heading h2</div>
+<br>
+<a name="80"></a><div class="latest .heading h2 span">Class latest .heading h2 span</div>
+<br>
+<a name="81"></a><div class="latest .heading h2">Class latest .heading h2</div>
+<br>
+<a name="82"></a><div class="latest .heading h2">Class latest .heading h2</div>
+<br>
+<a name="83"></a><div class="card">Class card</div>
+<br>
+<a name="84"></a><div class="card img">Class card img</div>
+<br>
+<a name="85"></a><div class="card">Class card</div>
+<br>
+<a name="86"></a><div class="card .overlay">Class card .overlay</div>
+<br>
+<a name="87"></a><div class="card">Class card</div>
+<br>
+<a name="88"></a><div class="card .card-details">Class card .card-details</div>
+<br>
+<a name="89"></a><div class="card">Class card</div>
+<br>
+<a name="90"></a><div class="card .card-details h4">Class card .card-details h4</div>
+<br>
+<a name="91"></a><div class="card .card-details p">Class card .card-details p</div>
+<br>
+<a name="92"></a><div class="owl-carousel">Class owl-carousel</div>
+<br>
+<a name="93"></a><div class="slider-carousel.owl-carousel">Class slider-carousel.owl-carousel</div>
+<br>
+<a name="94"></a><div class="slider-carousel.owl-carousel">Class slider-carousel.owl-carousel</div>
+<br>
+<a name="95"></a><div class="slider-carousel.owl-carousel">Class slider-carousel.owl-carousel</div>
+<br>
+<a name="96"></a><div class="slider-carousel.owl-carousel">Class slider-carousel.owl-carousel</div>
+<br>
+<a name="97"></a><div class="owl-prev">Class owl-prev</div>
+<br>
+<a name="98"></a><div class="owl-next">Class owl-next</div>
+<br>
+<a name="99"></a><div class="owl-prev">Class owl-prev</div>
+<br>
+<a name="100"></a><div class="owl-next">Class owl-next</div>
+<br>
+<a name="101"></a><div class="owl-carousel">Class owl-carousel</div>
+<br>
+<a name="102"></a><div class="owl-carousel">Class owl-carousel</div>
+<br>
+<a name="103"></a><div class="owl-dots">Class owl-dots</div>
+<br>
+<a name="104"></a><div class="content">Class content</div>
+<br>
+<a name="105"></a><div class="panel">Class panel</div>
+<br>
+<a name="106"></a><div class="panel-heading">Class panel-heading</div>
+<br>
+<a name="107"></a><div class="panel .panel-heading h3">Class panel .panel-heading h3</div>
+<br>
+<a name="108"></a><div class="panel-heading .btn">Class panel-heading .btn</div>
+<br>
+<a name="109"></a><div class="category">Class category</div>
+<br>
+<a name="110"></a><div class="category .head">Class category .head</div>
+<br>
+<a name="111"></a><div class="category .head h3">Class category .head h3</div>
+<br>
+<a name="112"></a><div class="category .head">Class category .head</div>
+<br>
+<a name="113"></a><div class="category .head a">Class category .head a</div>
+<br>
+<a name="114"></a><div class="category .head a">Class category .head a</div>
+<br>
+<a name="115"></a><div class="category .col-md-4">Class category .col-md-4</div>
+<br>
+<a name="116"></a><div class="thumbnail">Class thumbnail</div>
+<br>
+<a name="117"></a><div class="thumbnail .image">Class thumbnail .image</div>
+<br>
+<a name="118"></a><div class="thumbnail .image img">Class thumbnail .image img</div>
+<br>
+<a name="119"></a><div class="thumbnail">Class thumbnail</div>
+<br>
+<a name="120"></a><div class="thumbnail .image .overlay">Class thumbnail .image .overlay</div>
+<br>
+<a name="121"></a><div class="thumbnail">Class thumbnail</div>
+<br>
+<a name="122"></a><div class="thumbnail .caption">Class thumbnail .caption</div>
+<br>
+<a name="123"></a><div class="thumbnail">Class thumbnail</div>
+<br>
+<a name="124"></a><div class="thumbnail .caption h4">Class thumbnail .caption h4</div>
+<br>
+<a name="125"></a><div class="thumbnail .caption p">Class thumbnail .caption p</div>
+<br>
+<a name="126"></a><div class="thumbnail-full">Class thumbnail-full</div>
+<br>
+<a name="127"></a><div class="thumbnail-full .image">Class thumbnail-full .image</div>
+<br>
+<a name="128"></a><div class="thumbnail-full .image img">Class thumbnail-full .image img</div>
+<br>
+<a name="129"></a><div class="thumbnail-full .image">Class thumbnail-full .image</div>
+<br>
+<a name="130"></a><div class="thumbnail-full .image .overlay">Class thumbnail-full .image .overlay</div>
+<br>
+<a name="131"></a><div class="thumbnail-full .image">Class thumbnail-full .image</div>
+<br>
+<a name="132"></a><div class="thumbnail-full .caption">Class thumbnail-full .caption</div>
+<br>
+<a name="133"></a><div class="thumbnail-full .caption h4">Class thumbnail-full .caption h4</div>
+<br>
+<a name="134"></a><div class="thumbnail-full .caption p.post-content">Class thumbnail-full .caption p.post-content</div>
+<br>
+<a name="135"></a><div class="thumbnail-full .caption p.data">Class thumbnail-full .caption p.data</div>
+<br>
+<a name="136"></a><div class="thumbnail-full .caption p.data span">Class thumbnail-full .caption p.data span</div>
+<br>
+<a name="137"></a><div class="thumbnail-full .caption p.data span">Class thumbnail-full .caption p.data span</div>
+<br>
+<a name="138"></a><div class="thumbnail-2-col">Class thumbnail-2-col</div>
+<br>
+<a name="139"></a><div class="thumbnail-2-col .image">Class thumbnail-2-col .image</div>
+<br>
+<a name="140"></a><div class="thumbnail-2-col .image img">Class thumbnail-2-col .image img</div>
+<br>
+<a name="141"></a><div class="thumbnail-2-col">Class thumbnail-2-col</div>
+<br>
+<a name="142"></a><div class="thumbnail-2-col .caption">Class thumbnail-2-col .caption</div>
+<br>
+<a name="143"></a><div class="thumbnail-2-col .caption h4">Class thumbnail-2-col .caption h4</div>
+<br>
+<a name="144"></a><div class="thumbnail-2-col .caption p.data">Class thumbnail-2-col .caption p.data</div>
+<br>
+<a name="145"></a><div class="thumbnail-2-col .caption p.data span">Class thumbnail-2-col .caption p.data span</div>
+<br>
+<a name="146"></a><div class="thumbnail-2-col .caption p.data span">Class thumbnail-2-col .caption p.data span</div>
+<br>
+<a name="147"></a><div class="category-carousel">Class category-carousel</div>
+<br>
+<a name="148"></a><div class="thumb-carousel .thumb-image">Class thumb-carousel .thumb-image</div>
+<br>
+<a name="149"></a><div class="thumb-carousel .thumb-image img">Class thumb-carousel .thumb-image img</div>
+<br>
+<a name="150"></a><div class="thumb-carousel .thumb-details">Class thumb-carousel .thumb-details</div>
+<br>
+<a name="151"></a><div class="thumb-carousel .thumb-details h4">Class thumb-carousel .thumb-details h4</div>
+<br>
+<a name="152"></a><div class="thumb-carousel .thumb-details p">Class thumb-carousel .thumb-details p</div>
+<br>
+<a name="153"></a><div class="widget">Class widget</div>
+<br>
+<a name="154"></a><div class="widget-title">Class widget-title</div>
+<br>
+<a name="155"></a><div class="widget-title h4">Class widget-title h4</div>
+<br>
+<a name="156"></a><div class="widget-body">Class widget-body</div>
+<br>
+<a name="157"></a><div class="widget-recent-posts .post-item">Class widget-recent-posts .post-item</div>
+<br>
+<a name="158"></a><div class="widget-recent-posts .post-item">Class widget-recent-posts .post-item</div>
+<br>
+<a name="159"></a><div class="widget-recent-posts .post-item">Class widget-recent-posts .post-item</div>
+<br>
+<a name="160"></a><div class="widget-recent-posts .post-item .post-thumb">Class widget-recent-posts .post-item .post-thumb</div>
+<br>
+<a name="161"></a><div class="widget-recent-posts .post-item .post-thumb img">Class widget-recent-posts .post-item .post-thumb img</div>
+<br>
+<a name="162"></a><div class="widget-recent-posts .post-item">Class widget-recent-posts .post-item</div>
+<br>
+<a name="163"></a><div class="widget-recent-posts .post-item .post-thumb .overlay">Class widget-recent-posts .post-item .post-thumb .overlay</div>
+<br>
+<a name="164"></a><div class="widget-recent-posts .post-item">Class widget-recent-posts .post-item</div>
+<br>
+<a name="165"></a><div class="widget-recent-posts .post-item .post-content">Class widget-recent-posts .post-item .post-content</div>
+<br>
+<a name="166"></a><div class="widget-recent-posts .post-item .post-content h4 a">Class widget-recent-posts .post-item .post-content h4 a</div>
+<br>
+<a name="167"></a><div class="widget-recent-posts .post-item .post-content h4">Class widget-recent-posts .post-item .post-content h4</div>
+<br>
+<a name="168"></a><div class="widget-recent-posts .post-item">Class widget-recent-posts .post-item</div>
+<br>
+<a name="169"></a><div class="widget-recent-posts .post-item .post-content p">Class widget-recent-posts .post-item .post-content p</div>
+<br>
+<a name="170"></a><div class="widget-recent-posts .post-item .post-content p span">Class widget-recent-posts .post-item .post-content p span</div>
+<br>
+<a name="171"></a><div class="widget-recent-posts .post-item .post-content p span">Class widget-recent-posts .post-item .post-content p span</div>
+<br>
+
+</body></html>
